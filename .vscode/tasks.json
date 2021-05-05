@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "build:draggable-multiselect",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "Build ngx-draggable-multiselect",
+      "detail": "npx -p @angular/cli@8.3.29 ng build ngx-draggable-multiselect"
+    },
+    {
+      "type": "npm",
+      "script": "start:lib-dev-app",
+      "problemMatcher": [],
+      "label": "Start (Serve) lib-dev-app",
+      "detail": "npx -p @angular/cli@8.3.29 ng serve lib-dev-app"
+    }
+  ]
+}

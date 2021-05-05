@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-draggable-multiselect": [
+        "dist/ngx-draggable-multiselect"
+      ],
+      "ngx-draggable-multiselect/*": [
+        "dist/ngx-draggable-multiselect/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -1,13 +1,15 @@
 {
   "name": "ngx-libraries",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "npx -p @angular/cli@8.3.29 ng",
+    "start": "npx -p @angular/cli@8.3.29 ng serve",
+    "build": "npx -p @angular/cli@8.3.29 ng build",
+    "test": "npx -p @angular/cli@8.3.29 ng test",
+    "lint": "npx -p @angular/cli@8.3.29 ng lint",
+    "e2e": "npx -p @angular/cli@8.3.29 ng e2e",
+    "build:draggable-multiselect": "npx -p @angular/cli@8.3.29 ng build ngx-draggable-multiselect",
+    "start:lib-dev-app": "npx -p @angular/cli@8.3.29 ng serve lib-dev-app"
   },
   "private": true,
   "dependencies": {
@@ -21,9 +23,12 @@
     "@angular/router": "~8.2.14",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "@angular/cdk": "^8.2.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.29",
+    "@angular-devkit/build-ng-packagr": "~0.803.29",
     "@angular/cli": "~8.3.29",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
@@ -38,8 +43,10 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "ng-packagr": "^5.4.0",
     "protractor": "~7.0.0",
     "ts-node": "~7.0.0",
+    "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   }

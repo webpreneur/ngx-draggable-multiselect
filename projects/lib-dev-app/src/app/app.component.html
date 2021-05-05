@@ -1,0 +1,12 @@
+
+<h1 style="text-align: center">Multi-Select</h1>
+<div style="padding: 10%">
+  <ngx-draggable-multiselect
+    [placeholder]="'Search...'"
+    [data]="dropdownList"
+    [settings]="dropdownSettings"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)"
+  >
+  </ngx-draggable-multiselect>
+</div>
